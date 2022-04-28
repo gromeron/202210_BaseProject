@@ -1,7 +1,16 @@
 <testExecutions version="1">
+  <file path="src/app/modules/coffee/coffee-list/coffee-list.component.spec.ts">
+    <testCase name="CoffeeListComponent should create" duration="48"/>
+  </file>
+  <file path="src/app/modules/coffee/model/coffee.spec.ts">
+    <testCase name="Coffee should create an instance" duration="1"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="152"/>
-    <testCase name="AppComponent should create the app" duration="21"/>
+    <testCase name="AppComponent should create the app" duration="153"/>
+    <testCase name="AppComponent should have as title 'base-project'" duration="29"/>
     <testCase name="AppComponent should render title" duration="20"/>
+  </file>
+  <file path="src/app/modules/coffee/service/coffee.service.spec.ts">
+    <testCase name="CoffeeService should be created" duration="10"/>
   </file>
 </testExecutions>
