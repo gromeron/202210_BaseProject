@@ -13,6 +13,6 @@ export class CoffeeService {
   constructor(private _http: HttpClient) { }
 
   getCoffees(): Observable<Coffee[]> {
-    return this._http.get<Coffee>(this.apiUrl);
+    return this._http.get<Coffee[]>(this.apiUrl);
   }
 }
