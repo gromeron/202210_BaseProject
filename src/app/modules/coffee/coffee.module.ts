@@ -12,6 +12,9 @@ import { CoffeeListComponent } from './coffee-list/coffee-list.component';
   imports: [
     CommonModule,
     CoffeeRoutingModule
+  ],
+  exports: [
+    CoffeeListComponent
   ]
 })
 export class CoffeeModule { }
