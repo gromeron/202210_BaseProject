@@ -16,11 +16,11 @@ export class CoffeeListComponent implements OnInit {
   getCoffees(): void {
     this.coffeeService.getCoffees().subscribe((coffees) => {
       this.coffees = coffees;
-    })
+    });
   }
 
   ngOnInit(): void {
-    this.getCoffees;
+    this.getCoffees();
   }
 
 }

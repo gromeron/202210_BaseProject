@@ -11,9 +11,12 @@
             <th scope="col">Región</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let coffee of coffees">
           <tr>
-            <th scope="row"></th>
+            <th scope="row">{{ coffee.id }}</th>
+            <th>{{ coffee.nombre }}</th>
+            <th>{{ coffee.tipo }}</th>
+            <th>{{ coffee.region }}</th>
           </tr>
         </tbody>
       </table>
