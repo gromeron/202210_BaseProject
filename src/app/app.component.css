@@ -1,3 +1,10 @@
 * [lang^=en] {
   color: green;
 }
+
+#main-banner {
+    max-height: 290px;
+    width: auto;
+    max-width: 100%;
+    vertical-align: top;
+}

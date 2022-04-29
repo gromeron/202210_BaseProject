@@ -2,14 +2,24 @@
   <app-side-bar ></app-side-bar>
   <div class="wrapper d-flex flex-column flex-row-fluid">
     <app-nav-bar></app-nav-bar> -->
+    <div class="container">
     <div class="content d-flex flex-column flex-column-fluid">
-      <div class="content text-center text-capitalize">
+      <div class="content text-left text-capitalize">
         <h1>El aroma mágico</h1>
+      </div>
+      <hr>
+      <div>
+        <img src="../assets/img/coffee-screenshot-banner.png" alt="main-banner" id="main-banner">
       </div>
       <div class="container-xxl">
         <router-outlet></router-outlet>
         <app-coffee-list></app-coffee-list>
       </div>
     </div>
+
+    <div class="text-center">
+      <footer>Contact us: +57 3102105253 - info@elaromamagico.com - @elaormamagico</footer>
+    </div>
+  </div>
   <!-- </div>
 </div> -->
