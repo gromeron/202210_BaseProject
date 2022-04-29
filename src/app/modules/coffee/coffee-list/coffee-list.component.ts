@@ -19,8 +19,36 @@ export class CoffeeListComponent implements OnInit {
     });
   }
 
+  public getOriginCoffee(): number {
+    let totalOrigin: number = 0;
+    for(let index=0; index < this.coffees.length; index++)
+    {
+      let origin: Coffee = this.coffees[index];
+      if(origin.tipo == "Café de Origen")
+      {
+        totalOrigin += 1;
+      }
+    }
+    return totalOrigin;
+  }
+
+  public getBlendCoffee(): number {
+    let totalBlend: number = 0;
+    for(let index=0; index < this.coffees.length; index++)
+    {
+      let blend: Coffee = this.coffees[index];
+      if(blend.tipo == "Blend")
+      {
+        totalBlend += 1;
+      }
+    }
+    return totalBlend;
+  }
+
   ngOnInit(): void {
     this.getCoffees();
+    this.getOriginCoffee();
+    this.getBlendCoffee();
   }
 
 }
