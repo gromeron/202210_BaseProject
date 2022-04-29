@@ -22,14 +22,16 @@
       </table>
 
       <div>
-        <tr>
-          <th>Total café de origen:</th>
-          <th>{{ getOriginCoffee() }}</th>
-        </tr>
-        <tr>
-          <th>Total café blend:</th>
-          <th>{{ getBlendCoffee() }}</th>
-        </tr>
+        <table>
+          <tr>
+            <td colspan="2">Total café de origen:</td>
+            <td id="stat-cell">{{ getOriginCoffee() }}</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total café blend:</td>
+            <td id="stat-cell">{{ getBlendCoffee() }}</td>
+          </tr>
+        </table>
       </div>
 
     </div>

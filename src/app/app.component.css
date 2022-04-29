@@ -3,8 +3,12 @@
 }
 
 #main-banner {
-    max-height: 290px;
-    width: auto;
-    max-width: 100%;
-    vertical-align: top;
+  max-height: 290px;
+  width: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+#page-title {
+  font-family: 'Indie Flower', cursive;
 }
