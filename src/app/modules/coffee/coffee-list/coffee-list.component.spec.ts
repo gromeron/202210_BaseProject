@@ -1,9 +1,9 @@
 import { HttpClientModule } from '@angular/common/http';
 import { DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
 import { Coffee } from '../model/coffee';
 import { CoffeeService } from '../service/coffee.service';
+import { faker } from '@faker-js/faker';
 
 import { CoffeeListComponent } from './coffee-list.component';
 
@@ -13,31 +13,31 @@ describe('CoffeeListComponent', () => {
   let debug: DebugElement;
   let testCoffee: Coffee[] = [
     new Coffee(
-      1,
-      "Café Luga",
-      "Honey",
-      "Risaralda",
-      "Dulce",
-      1650,
-      "http://image.com/01"),
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.datatype.number(),
+      faker.image.imageUrl()),
     new Coffee(
-      2,
-      "Café Sello Rojo",
-      "Normal",
-      "Cundinamarca",
-      "Amargo",
-      2750,
-      "http://image.com/02"),
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.datatype.number(),
+      faker.image.imageUrl()),
     new Coffee(
-      3,
-      "Café Quindio",
-      "Fuerte",
-      "Quindio",
-      "Suave",
-      1320,
-      "http://image.com/03"
-    )
-  ]
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.datatype.number(),
+      faker.image.imageUrl()
+    ),
+  ];
 
 
   beforeEach(async () => {
@@ -52,7 +52,7 @@ describe('CoffeeListComponent', () => {
   });
 
   beforeEach(() => {
-    CoffeeListComponent.prototype.ngOnInit = () => {};
+    CoffeeListComponent.prototype.ngOnInit = () => { };
     fixture = TestBed.createComponent(CoffeeListComponent);
     component = fixture.componentInstance;
 
