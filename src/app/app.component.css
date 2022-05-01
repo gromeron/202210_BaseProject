@@ -10,5 +10,6 @@
 }
 
 #page-title {
-  font-family: 'Indie Flower', cursive;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1);
 }

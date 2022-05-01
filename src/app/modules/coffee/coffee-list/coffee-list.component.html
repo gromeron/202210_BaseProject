@@ -1,22 +1,22 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col mb-2">
+    <div class="col col-md col-lg-8 mb-2">
 
       <table class="table">
-        <thead class="table-dark">
+        <thead id="table-header">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Región</th>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Región</th>
           </tr>
         </thead>
         <tbody *ngFor="let coffee of coffees">
           <tr>
-            <th scope="row">{{ coffee.id }}</th>
-            <th>{{ coffee.nombre }}</th>
-            <th>{{ coffee.tipo }}</th>
-            <th>{{ coffee.region }}</th>
+            <td id="table-index">{{ coffee.id }}</td>
+            <td id="table-body">{{ coffee.nombre }}</td>
+            <td id="table-body">{{ coffee.tipo }}</td>
+            <td id="table-body">{{ coffee.region }}</td>
           </tr>
         </tbody>
       </table>

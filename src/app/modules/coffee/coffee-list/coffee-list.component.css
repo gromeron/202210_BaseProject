@@ -1,3 +1,35 @@
 #stat-cell {
   text-indent: 1rem;
 }
+
+/* .table-dark {
+  font-weight: 400;
+} */
+
+/* #table-index {
+  font-weight: bold;
+} */
+
+/* #table-header {
+  font-weight: bold;
+} */
+
+thead[id="table-header"] {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  font-weight: bold;
+}
+
+td[id="table-body"] {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  font-weight: 400;
+}
+
+td[id="table-index"] {
+  font-weight: bold;
+}
+
+.table, th, td {
+  border: 0px;
+}

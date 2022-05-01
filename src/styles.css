@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --font-family-1: 'Indie Flower', cursive;
+  --font-family-2: 'Inter', sans-serif;
+  --font-size-1: 36px;
+  --font-size-2: 18px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-2);
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-2);
+  color: var(--color-1);
+}
